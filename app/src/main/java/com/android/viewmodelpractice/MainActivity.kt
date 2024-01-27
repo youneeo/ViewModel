@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         binding.textSum.text = viewModel.getTotal().toString()
 
         binding.buttonCount.setOnClickListener {
-            //setTotal()을 호출해 edittext의 값을 total에 더한다.
+            //setTotal()을 호출해 edittext의 값을 total에 더한다..
             viewModel.setTotal(binding.countEditText.text.toString().toInt())
             //현재 값을 불러온다.
             binding.textSum.text = viewModel.getTotal().toString()
